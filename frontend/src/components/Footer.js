@@ -68,7 +68,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 pt-6 mt-6 -mb-4">
           <div className="flex flex-col md:flex-row justify-between items-center text-sm">
             <div className="flex items-center mb-4 md:mb-0">
-              <p>© 2024 HelixDiscovery™ Inc. All rights reserved.</p>
+              <p>© 2024 MedixAI Inc. All rights reserved.</p>
             </div>
           </div>
         </div>

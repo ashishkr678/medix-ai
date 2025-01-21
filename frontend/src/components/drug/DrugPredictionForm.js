@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
-import { useLocation } from 'react-router-dom';  // Importing useLocation for route change detection
+import { useLocation } from 'react-router-dom';
 
 const DrugPredictionForm = () => {
     const [symptoms, setSymptoms] = useState('');
     const [prediction, setPrediction] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
-    const location = useLocation();  // Hook to get current location
+    const location = useLocation();
 
     useEffect(() => {
         const handlePageLeave = () => {
@@ -30,7 +30,6 @@ const DrugPredictionForm = () => {
     }, []);
 
     useEffect(() => {
-        // Reset form when the route changes (user navigates away)
         return () => {
             resetForm();
         };
